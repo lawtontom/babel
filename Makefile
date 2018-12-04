@@ -132,7 +132,7 @@ bootstrap: clean-all
 	yarn --ignore-engines
 	./node_modules/.bin/lerna bootstrap -- --ignore-engines
 	make build
-	node packages/babel-plugin-transform-runtime/scripts/build-dist.js
+	# node packages/babel-plugin-transform-runtime/scripts/build-dist.js
 
 clean-lib:
 	$(foreach source, $(SOURCES), \
