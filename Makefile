@@ -44,6 +44,7 @@ watch: clean clean-lib
 	BABEL_ENV=development ./node_modules/.bin/gulp watch
 
 flow:
+	./node_modules/.bin/flow ls --strip-root
 	./node_modules/.bin/flow check --strip-root --verbose
 
 lint:
